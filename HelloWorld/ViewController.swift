@@ -10,6 +10,8 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    print("hello world")
+    
     @IBOutlet weak var appTitle: UIImageView!
     @IBOutlet weak var appBttn: UIButton!
     @IBOutlet weak var appBackground: UIImageView!
