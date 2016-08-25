@@ -10,6 +10,9 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var appTitle: UIImageView!
+    @IBOutlet weak var appBttn: UIButton!
+    @IBOutlet weak var appBackground: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -21,5 +24,9 @@ class ViewController: UIViewController {
     }
 
 
+    @IBAction func appBttnPressed(_ sender: AnyObject) {
+        appBttn.isHidden = true
+        appTitle.isHidden = false
+        appBackground.isHidden = false
+    }
 }
-
